@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Whole html box designing */
+      html {
+        box-sizing: border-box;
+      }
+
+      /* Body width fixing */
+      body {
+        background-repeat: no-repeat;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      /* Box sizing depending on parent */
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      /* Styling column */
+      .column {
+        float: left;
+        width: 33%;
+        margin-bottom: 16px;
+        padding: 2px 10px;
+      }
+
+      /* Column width change depends
+		on screen size */
+      @media screen and (max-width: 670px) {
+        .column {
+          width: 100%;
+          text-align: none;
+        }
+      }
+
+      /* Card designing */
+      .card {
+        background-color: gray;
+        border: 1px solid black;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      /* Icon styling */
+      .fa {
+        margin: 10px;
+        font-size: 68px;
+      }
+
+      .fa:hover {
+        transform: rotateY(180deg);
+        transition: transform 0.8s;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /* Button designing */
+      .button {
+        border: none;
+        padding: 8px;
+        color: white;
+        background-color: #449d44;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      /* Hover effect on button */
+      .button:hover {
+        background-color: green;
+      }
+
+      /* Margin first member of team */
+      #gfg {
+        float: none;
+        margin: auto;
+      }
+      body {
+        background-image: url("https://www.anandgroupindia.com/wp-content/uploads/2018/02/PursuingAdvancedEngineeringN.png");
+        position: relative;
+        background-repeat: no-repeat;
+        margin-top: 30px;
+        background-size: cover;
+      }
+	  #foot {
+		text-align: center;
+		position: fixed;
+		background-color: black;
+		width: 100%;
+		margin-left: -397px;
+		bottom: 0px;
+		right: 0px;
+	}
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- linking font awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <center>
+      <h1>Meet The Team</h1>
+      <hr />
+
+      <!-- First member of the team -->
+      <br />
+      <br />
+      <div class="row">
+        <div class="column" id="gfg">
+          <div class="card">
+            <i class="fa fa-user-circle" style="font-size: 68px"></i>
+            <div class="container">
+              <h2>Abhinav Gupta</h2>
+
+              <p>Team Member</p>
+
+              <a href="https://www.linkedin.com/in/abhinav-gupta-8732a1141/">
+                <button class="button">View</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other members of the team -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <i class="fa fa-user-circle" style="font-size: 68px"></i>
+            <div class="container">
+              <h2>Avantika Shrivastav</h2>
+
+              <p>Team Member</p>
+
+              <a href="https://www.linkedin.com/in/avantika-shrivastava/">
+                <button class="button">View</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <i class="fa fa-user-circle" style="font-size: 68px"></i>
+            <div class="container">
+              <h2>Shrinidhi Kulkarni</h2>
+
+              <p>Team Member</p>
+
+              <a
+                href="https://www.linkedin.com/in/shrinidhi-kulkarni-4394281b9/"
+              >
+                <button class="button">View</button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <i class="fa fa-user-circle" style="font-size: 68px"></i>
+            <div class="container">
+              <h2>Allauddin Khan</h2>
+
+              <p>Team Member</p>
+
+              <a href="https://www.linkedin.com/in/allauddin-khan-9285b0197/"
+                ><button class="button">View</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </center>
+	<div id="foot">
+		<h5 style="color: white;">Copyright © 2021 Dana Anand Pvt Limited. All Rights Reserved.</h5>
+	</div>
+  </body>
+  
+</html>
